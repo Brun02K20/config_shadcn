@@ -5,6 +5,7 @@ import { ProfileForm } from "./components/Form";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { TabsDemo } from "./components/Home";
 import { CarouselDemo } from "./components/Carousel";
+import Menu from "./components/Menu";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       {/* Tu contenido de la aplicación aquí */}
       <ModeToggle />
       <BrowserRouter>
+        <Menu></Menu>
         <Routes>
           <Route 
             path="/"
